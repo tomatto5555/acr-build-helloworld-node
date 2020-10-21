@@ -1,9 +1,9 @@
 name: Build and Push
 
 on:
-  push:
-    tags:
-      - v*
+  pull_request:
+    branches:
+      - development
 
 jobs:
   build-and-push:
